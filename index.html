@@ -11,8 +11,25 @@
 </head>
 <body>
   <div class="container">
-    
-  </div>
-  
+    <div class="jumbotron">
+      <h1>Fortune Telling Form</h1>
+    </div>
+    <form action="#" id="fortune-form">
+      <div class="form-group">
+        <p>Check the things you have done or seen in the past week and we'll tell your fortune.</p>
+        <!-- we can rewrite this with bootstrap  -->
+        <input type="checkbox" name="superstition" value="spill-salt"> Spilled Salt. <br>
+        <input type="checkbox" name="superstition" value="break-mirror"> Broke a mirror. <br>
+        <input type="checkbox" name="superstition" value="open-umbrella"> Opened an umbrella inside. <br>
+      </div>
+      <button class="btn" type="submit">Submit Items</button>
+    </form>
+    <span id="user-fortune">
+      <p>Here is your fortune:</p>
+      <div class="bad-luck">
+        <p>Darn, you're probably going to die.</p>
+      </div>
+    </span>
+  </div>  
 </body>
 </html>
